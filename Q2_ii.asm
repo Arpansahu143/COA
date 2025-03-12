@@ -1,0 +1,12 @@
+; NAME - ARPAN SAHU
+; REGD.NO. - 2341019235
+; Y = (DATA1 AND DATA2) OR (DATA1 XOR DATA2)
+
+MOV AL, [5000H] 
+MOV BL, [5001H] 
+MOV CL, AL       
+AND AL, BL       
+XOR CL, BL       
+OR  AL, CL       
+MOV [5002H], AL  
+HLT               
